@@ -52,7 +52,7 @@ function decrypt(){
     let result = text.replaceAll(reg, (matched) => wordsdecrypt[matched]);
     document.getElementById("text_output").innerHTML = result;
     } else {
-        alert("O Decodificador funciona apenas com letras de a-z, minusculas e sem acento!")
+        alert("O Decodificador funciona apenas com letras de a-z, minusculas e sem acento!");
     }
 }
 
@@ -60,26 +60,24 @@ async function copy(){
     if(document.getElementById("text_output").value != "Nenhuma mensagem encontrada!"){
         try{
             let copyText = document.getElementById("text_output");
-            document.getElementById('text_output').focus()
+            copyText.focus();
             await navigator.clipboard.writeText(copyText.value)
             .then(()=> {alert("Texto copiado")});
         }catch {
-            alert("Esse navegador não é compativel com essa função")
+            alert("Esse navegador não é compativel com essa função");
         }
     }else{
-        alert("Campo vazio!")
+        alert("Campo vazio!");
     }
 }
 
 function swap(){
-    let textInput = document.getElementById("text_input")
-    let textOutput = document.getElementById("text_output")
-    let texteInputAux = textInput.value
+    let textInput = document.getElementById("text_input");
+    let textOutput = document.getElementById("text_output");
+    let texteInputAux = textInput.value;
     if(textOutput.value != 'Nenhuma mensagem encontrada!'){
-        textInput.value = textOutput.value
-        textOutput.value = texteInputAux
-    }else {
-        console.log('aaaaaaaa')
+        textInput.value = textOutput.value;
+        textOutput.value = texteInputAux;
     }
 }
 
