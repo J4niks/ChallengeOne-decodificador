@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/svg/logow.svg">
+    
+</head>
+<body>
+    <header>
+        <div class="top">
+            <a href="https://personalsite-livid-psi.vercel.app" target="_blank"><img class="my_logo" src="./assets/svg/logow.svg"></a>
+            <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank"><img class="one_logo" src="./assets/img/ONE.png"></a>
+        </div>
+    </header>
+    <main>
+        <section class="input">
+            <textarea id="text_input" placeholder="Texto para ser codificado/decodificado, Apenas letras minusculas sem acento."></textarea>
+            <div class="input_buttons">
+                <button class="buttons" onclick="encrypt()"><img src="./assets/svg/lockLw_ico.svg">Codificar</button>
+                <button class="buttons" onclick="decrypt()"><img src="./assets/svg/lockOw_ico.svg">Decodificar</button>  
+            </div>
+        </section>
+        <button id="swapButton" onclick="swap()"><img src="./assets/svg/arrows_ico.svg" ></button>
+        <section class="output">
+            <output id="text_output">Nenhuma mensagem encontrada!<img id="search_image" src="./assets/svg/search.svg"></output>
+            <div>
+                <button class="buttons" onclick="copy()"><img src="./assets/svg/clipboardw_ico.svg">Copiar</button>
+                <input class="colorMode" type="checkbox" id="colorTheme" onchange="color()"> <label class="buttons" for="colorTheme"><img class="themeImage" id="labelColorThemeImg" src="./assets/svg/moon_ico.svg">Tema</label>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bottom">
+            <nav class="social">
+                <a class="social_items" href="https://www.linkedin.com/in/janiksoliveira/" target="_blank"><img src="./assets/svg/linkedinw_ico.svg">LinkedIn</a>
+                <a class="social_items" href="https://github.com/J4niks/" target="_blank"><img src="./assets/svg/githubw_ico.svg">GitHub</a>
+                <a class="social_items" href="https://linktr.ee/janiksoliveira" target="_blank"><img src="./assets/svg/dotsw_ico.svg">Outros Links</a>
+            </nav>
+            <div class="developed_by">
+               <h2>Desenvolvido</h2> 
+                <h2>por</h2> 
+                <h2>Janiks Oliveira, 2024.</h2>
+            </div>
+            
+        </section>
+    </footer>
+    <script src="./scripts/encrypter.js"></script>
+    <script src="./scripts/theme.js"></script>
+</body>
+</html>

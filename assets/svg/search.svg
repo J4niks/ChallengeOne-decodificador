@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="#77adfa" width="64px" height="64px" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier">
+
+<title/>
+
+<path d="M2.71,22.71l6.4-6.4A8,8,0,1,0,7.69,14.9l-6.4,6.4ZM14,4a6,6,0,1,1-6,6A6,6,0,0,1,14,4Z" fill="#DF7861"/>
+
+<path d="M14,7a1,1,0,0,1,.59,1.81A3.66,3.66,0,0,0,13,11.74V12h2v-.26a1.71,1.71,0,0,1,.77-1.32A3,3,0,1,0,11,8h2A1,1,0,0,1,14,7Z" fill="#DF7861"/>
+
+<rect height="2" width="2" x="13" y="13" fill="#DF7861"/>
+
+</g>
+
+</svg>

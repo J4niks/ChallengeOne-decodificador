@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@0,400;1,600&display=swap');
+
+* {
+    cursor: var(--cursorNormal)
+}
+
+:root {
+    --primaryFont:'Montserrat', sans-serif;
+    --secondaryFont: 'Merriweather', serif;
+    --colorBackground: #FCF8E8;
+    --mainColor: #DF7861;
+    --hoverColor: #d34728;
+    --textColor: #FCF8E8;
+    --secondaryText:#5f1100;
+    --cursorPointer: url('../assets/img/cursor_pointer.png'), default !important;
+    --cursorNormal: url('../assets/img/cursor.png'), default !important;
+}   
+
+.darkMode{
+    --colorBackground: #18100E;
+    --mainColor: #7E6363;
+    --textColor: #FCF8E8;
+    --secondaryText: #977676;
+    --hoverColor: #312727;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-color: var(--colorBackground);
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    height: 6vh;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+}
+.top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.one_logo {
+    width: 15vh;
+    cursor: var(--cursorPointer)
+}
+.my_logo {
+    width: 5vh;
+    cursor: var(--cursorPointer)
+}
+
+main { 
+    height: 80%;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+    gap: 0.8vh;
+}
+
+.input textarea {
+    resize: none;
+    border-radius: 20px;
+    height: 25vh;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 4vw;
+    box-shadow: 0.2vw 0.2px 0.5vw 0.1vw var(--mainColor);
+    background-color: var(--colorBackground);
+    color: var(--secondaryText);
+    outline: none;
+    border: none;
+    
+}
+
+.input textarea::placeholder {
+    color: var(--secondaryText);
+}
+.input_buttons {
+    display: flex;
+    align-items: center;
+    gap: 3vw;    
+    width: 100%;
+    margin-top: 0.5vw;
+}
+
+.buttons {
+    background-color: var(--mainColor);
+    border: 1px solid var(--hoverColor);
+    border-radius: 1vw;
+    width: 48%;
+    height: 4vh;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+    color: var(--textColor);
+    gap: 5px;
+}
+
+.buttons:hover {
+    box-shadow: inset 0.5vw 0.5vw 1vw 0.5vw var(--hoverColor);
+    cursor: var(--cursorPointer)
+}
+.buttons img {
+    width: 6vw;
+}
+
+#swapButton{
+    transform: rotate(90deg);
+    background-color: var(--mainColor);
+    border: 1px solid var(--hoverColor);
+    border-radius: 1vw;
+    width: 8vw;
+    height: 20vh;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#swapButton:hover{
+    box-shadow: inset 0.5vw 0.5vw 1vw 0.5vw var(--hoverColor);
+    cursor: var(--cursorPointer)
+}
+#swapButton img{
+    width: 10vw;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 49%;
+    width: 80%;
+    gap: 1.5vh;
+}
+
+.output output {
+    border-radius: 20px;
+    height: 25vh;
+    user-select: none;
+    width: 100%;
+    font-size: 4vw;
+    box-shadow: 0.2vw 0.2px 0.5vw 0.1vw var(--mainColor);
+    background-color: var(--colorBackground);
+    color: var(--secondaryText);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vh;
+    overflow: auto;
+
+}
+
+.output div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.output output img {
+    margin-top: 5vh;
+    width: 10vw;
+}
+
+.colorMode {
+    display: none;
+}
+
+
+
+footer {
+    width: 100%;
+}
+
+.bottom {
+    background-color: var(--mainColor);
+    bottom: 0px;
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1vh 0px 1vh;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.social_items {
+    color: var(--textColor);
+    font-size: 2vw;
+    font-family: var(--secondaryFont);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.social_items:hover {
+    color: var(--hoverColor);
+    cursor: var(--cursorPointer)
+}
+
+.social_items img {
+    width: 4vw;
+}
+
+.developed_by {
+    padding-right: 2vh;
+    font-size: 2vw;
+    color: var(--textColor);
+    font-family: var(--primaryFont);
+    font-style: italic;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hoverColor);
+}
+
+
+@media (min-width:1000px) {
+    
+    header {
+        height: 10vh;
+    }
+    
+    .top {
+        margin: 0.3vw 1vw 0vw 1vw;
+    }
+    .my_logo {
+        width: 4vw;
+    }
+
+    .one_logo {
+        width: 12vw;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .input {
+        height: 70vh;
+        width: 50%;
+    }
+
+    .input textarea{
+        width: 80%;
+        height: 100%;
+        font-size: 1.5vw;
+    }
+
+    .input_buttons {
+        margin-left: 16vw;
+    }
+
+    .buttons {
+        width: 30%;
+        height: 8vh;
+        font-size: 1.5vw;
+    }
+    .buttons img {
+        width: 3vw;
+    }
+    
+    #swapButton{
+        transform: rotate(180deg);
+        width: 6vw;
+        height: 5vh;
+    }
+    #swapButton img {
+        width: 2vw;
+    }
+    .output {
+        height: 70vh;
+        width: 50%;
+    }
+    .output output {
+        height: 100%;
+        width: 80%;
+        font-size: 1.5vw;
+    }
+
+    .bottom {
+        height: 6vh;
+        align-items: end;   
+    }
+    .social {
+        gap: 1vw;
+        margin-bottom: 0.8vh;
+    }
+
+    .social_items {
+        font-size: 1vw;
+        gap: 0.2vw;
+    }
+
+    .social_items img {
+        width:  1.5vw;
+    }
+
+    .developed_by {
+        font-size: 1vw;
+        flex-direction: row;
+        gap: 0.8vw;
+        margin-bottom: 2vh;
+    }
+
+}
